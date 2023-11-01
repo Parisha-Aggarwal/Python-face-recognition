@@ -3,14 +3,10 @@ import cv2
 # Load known faces and their encodings
 known_face_encodings = []
 known_face_names = []
-parisha_image = face_recognition.load_image_file("parisha.jpg")
-parisha_encoding = face_recognition.face_encodings(parisha_image)[0]
 ratan_tata_image = face_recognition.load_image_file("ratan.jpg")
 ratan_tata_encoding = face_recognition.face_encodings(ratan_tata_image)[0]
 andrew_image = face_recognition.load_image_file("andrew.jpg")
 andrew_encoding = face_recognition.face_encodings(andrew_image)[0]
-known_face_encodings.append(parisha_encoding)
-known_face_names.append("Parisha Aggarwal")
 known_face_encodings.append(ratan_tata_encoding)
 known_face_names.append("Ratan Tata")
 known_face_encodings.append(andrew_encoding)
